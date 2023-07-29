@@ -1,1 +1,1 @@
-# erp-ui
+# movie-hub-ui
