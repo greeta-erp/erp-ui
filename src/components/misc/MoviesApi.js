@@ -12,7 +12,7 @@ export const moviesApi = {
 }
 
 function getMovies() {
-  return instance.get('/movie')
+  return instance.get('/movie/')
 }
 
 function getMovie(imdbId) {
@@ -20,7 +20,7 @@ function getMovie(imdbId) {
 }
 
 function saveMovie(movie, token) {
-  return instance.post('/movie', movie, {
+  return instance.post('/movie/', movie, {
     headers: { 'Authorization': bearerAuth(token) }
   })
 }
