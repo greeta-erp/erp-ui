@@ -12,15 +12,11 @@ export const moviesApi = {
 }
 
 function getMovies() {
-  return instance.get('/movie'), {
-    headers: { 'Authorization': bearerAuth(token) }
-  }
+  return instance.get('/movie')
 }
 
 function getMovie(imdbId) {
-  return instance.get(`/movie/${imdbId}`), {
-    headers: { 'Authorization': bearerAuth(token) }
-  }
+  return instance.get(`/movie/${imdbId}`)
 }
 
 function saveMovie(movie, token) {
